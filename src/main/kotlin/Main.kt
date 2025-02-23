@@ -1,7 +1,12 @@
 package org.example
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
+    val auto = Automovil("Toyota", "Corolla", 50, "Turismo")
+    val moto = Motocicleta("Honda", "H4", 32, 250)
 
+    auto.mostrarInformacion()
+    println("Autonomía: ${auto.calcularAutonomia()} km\n")
+
+    moto.mostrarInformacion()
+    println("Autonomía: ${moto.calcularAutonomia()} km")
 }
